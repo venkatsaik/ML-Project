@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CT Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>BHK</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label>
+	</div>
+	</form>
+<form class="form">
+    <h2>Month</h2>
+	<div>
+  <select class="month" name="" id="uimonths">
+    <option value="" disabled="disabled" selected="selected">Choose a Month</option>
+		<option>Jan</option>
+        <option>Feb</option>
+  </select>
+</div>
+
+<h2>t_Month</h2>
+<div class="switch-field">
+    <input type="radio" id="radio-t_month-1" name="uit_months" value="1"/>
+    <label for="radio-t_month-1">1</label>
+    <input type="radio" id="radio-t_month-2" name="uit_months" value="2" checked/>
+    <label for="radio-t_month-2">2</label>
+</div>
+
+<h2>t_Month2</h2>
+<div class="switch-field">
+    <input type="radio" id="radio-t_month2-1" name="uit_months2" value="1"/>
+    <label for="radio-t_month1-1">1</label>
+    <input type="radio" id="radio-t_months2-2" name="uit_months2" value="2" checked/>
+    <label for="radio-t_month2-2">2</label>
+</div>
+
+<h2>t_Month3</h2>
+<div class="switch-field">
+    <input type="radio" id="radio-t_month3-1" name="uit_months3" value="1"/>
+    <label for="radio-t_month2-1">1</label>
+    <input type="radio" id="radio-t_month3-2" name="uit_months3" value="2" checked/>
+    <label for="radio-t_month3-2">2</label>
+</div>
+
+	<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
